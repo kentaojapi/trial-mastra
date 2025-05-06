@@ -29,7 +29,7 @@ export const kampoSearch = createTool({
     const recommendations = response.results.slice(0, 3).map((r: any) => ({
       title: r.title,
       url: r.url,
-      snippet: r.snippet,
+      content: r.content,
     }));
 
     return { recommendations };
